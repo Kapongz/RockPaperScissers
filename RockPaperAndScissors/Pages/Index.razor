@@ -17,10 +17,10 @@
 <div style="display:flex; justify-content:center;margin-bottom:20px;">
     <img src="@opponentHand.Image" class="image img-fluid"/>
 </div>
-<div style="display:flex; justify-content:space-around;">
+<div style="display:flex; justify-content:space-around; ">
     @foreach (var hand in hands)
    {
-       <div onclick="@(()=>SelectHand(hand))"  >
+       <div onclick="@(()=>SelectHand(hand))" >
              <img src="@hand.Image" class="image img-fluid selectable-image" />
        </div>
      
@@ -28,38 +28,21 @@
    }
     
     </div>
-    <button class="btn btn-primary" disabled=@IsTaskRunning @onclick="Clicked" > @ButtonName</button>
+  
 
 @code{
-        bool IsTaskRunning = false;
-        string ButtonName = "Click Me";
-        async void Clicked()
-        {
-            IsTaskRunning = true;
-            ButtonName = "Disabled";
-            await OnButtonClick();
 
-            //IsTaskRunning = false; use this to enable the button after the button click function executed
-            StateHasChanged();
-        }
-
-        Task OnButtonClick()
-        {
-            //here user can perform buton click function
-            return Task.Delay(6000);
-        }
-
-        List<Hand> hands = new List<Hand>()
+    List<Hand> hands = new List<Hand>()
     {
         new Hand{Selection = OptionRPS.Paper,LosesAgainst = OptionRPS.Scissors,WinsAgainst=OptionRPS.Rock,Image = "paper.png"},
-        new Hand{Selection = OptionRPS.Rock,LosesAgainst = OptionRPS.Paper,WinsAgainst=OptionRPS.Scissors,Image = "rock.png"},
+        new Hand{Selection = OptionRPS.Rock,LosesAgainst = OptionRPS.Paper,WinsAgainst=OptionRPS.Scissors,Image = "rock.jpg"},
         new Hand{Selection = OptionRPS.Scissors,LosesAgainst = OptionRPS.Rock,WinsAgainst=OptionRPS.Paper,Image = "scissors.png"}
     };
-        Timer timer;
-        Hand opponentHand;
-        string resultMessage = string.Empty;
-        string resultMessageColor = string.Empty;
-        private bool shouldRender = true;
+    Timer timer;
+    Hand opponentHand;
+    string resultMessage = string.Empty;
+    string resultMessageColor = string.Empty;
+    private bool shouldRender = true;
 
 
 
@@ -95,11 +78,11 @@
         var result = hand.PlayAgainst(opponentHand);
         StateHasChanged();
         shouldRender = false;
-
+       
 
         if(result == GameStatus.Victory)
         {
-            resultMessage = "You won!";
+            resultMessage = "ເຈົ້າຊະນະເດີ!";
             resultMessageColor = "green";
 
 
@@ -107,7 +90,7 @@
 
         }else if(result == GameStatus.Loss)
         {
-            resultMessage = "You lost!";
+            resultMessage = "ໂງ່ ແພ້ວ່ະ!";
             resultMessageColor = "red";
 
 
@@ -115,7 +98,7 @@
         }
         else
         {
-            resultMessage = "Draw!";
+            resultMessage = "ອຸ້ຍ ສະເໝີເສີຍ!";
             resultMessageColor = "black";
 
 
@@ -137,3 +120,4 @@
 
     
 }
+

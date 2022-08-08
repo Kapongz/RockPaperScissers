@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+1gbWuDGZ18bIYV8MnmzM/MIZ0VSoMjxgTPNl0HCvJs=",
+  "Hash": "RHTmJKNr/h8r13AvlA2tf27k2YD6gfP3Y/A1jzbNYxs=",
   "Source": "RockPaperAndScissors",
   "BasePath": "/",
   "Mode": "Root",
@@ -6800,40 +6800,6 @@
       "OriginalItemSpec": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Globalization.Calendars.dll"
     },
     {
-      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RockPaperAndScissors.styles.css",
-      "SourceId": "RockPaperAndScissors",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "/",
-      "RelativePath": "RockPaperAndScissors.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RockPaperAndScissors.styles.css"
-    },
-    {
-      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RockPaperAndScissors.bundle.scp.css",
-      "SourceId": "RockPaperAndScissors",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "/",
-      "RelativePath": "RockPaperAndScissors.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RockPaperAndScissors.bundle.scp.css"
-    },
-    {
       "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\css\\app.css",
       "SourceId": "RockPaperAndScissors",
       "SourceType": "Discovered",
@@ -7106,12 +7072,12 @@
       "OriginalItemSpec": "wwwroot\\paper.png"
     },
     {
-      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\rock.png",
+      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\rock.jpg",
       "SourceId": "RockPaperAndScissors",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "rock.png",
+      "RelativePath": "rock.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7120,7 +7086,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rock.png"
+      "OriginalItemSpec": "wwwroot\\rock.jpg"
     },
     {
       "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\sample-data\\weather.json",

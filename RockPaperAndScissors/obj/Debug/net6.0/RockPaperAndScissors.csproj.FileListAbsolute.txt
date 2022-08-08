@@ -804,10 +804,7 @@ D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\build
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\blazor.boot.json
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\staticwebassets.build.json
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\staticwebassets.development.json
-D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\scopedcss\bundle\RockPaperAndScissors.styles.css
-D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\scopedcss\projectbundle\RockPaperAndScissors.bundle.scp.css
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\RockPaperAndScissors.csproj.CopyComplete
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\RockPaperAndScissors.dll
 D:\Learn-Blazor\RockPaperAndScissors\RockPaperAndScissors\obj\Debug\net6.0\refint\RockPaperAndScissors.dll
