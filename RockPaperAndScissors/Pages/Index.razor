@@ -1,0 +1,129 @@
+﻿@page "/"
+@using System.Timers
+@using RockPaperAndScissors.Helper
+@implements IDisposable
+
+
+
+
+@if (!string.IsNullOrEmpty(resultMessage))
+{
+    <h1 class="text-center fw-bold" style="color:@resultMessageColor">@resultMessage</h1>
+}
+<div class="d-flex justify-content-center mb-4">
+    <button class="btn btn-info text-white" @onclick="PlayAgainst">Play Again</button>
+</div>
+
+<div style="display:flex; justify-content:center;margin-bottom:20px;">
+    <img src="@opponentHand.Image" class="image img-fluid"/>
+</div>
+<div style="display:flex; justify-content:space-around;">
+    @foreach (var hand in hands)
+   {
+       <div onclick="@(()=>SelectHand(hand))"  >
+             <img src="@hand.Image" class="image img-fluid selectable-image" />
+       </div>
+     
+
+   }
+    
+    </div>
+    <button class="btn btn-primary" disabled=@IsTaskRunning @onclick="Clicked" > @ButtonName</button>
+
+@code{
+     bool IsTaskRunning = false;
+    string ButtonName = "Click Me";
+    async void Clicked()
+    {
+        IsTaskRunning = true;
+        ButtonName = "Disabled";
+        await OnButtonClick();
+
+        //IsTaskRunning = false; use this to enable the button after the button click function executed
+        StateHasChanged();
+    }
+
+    Task OnButtonClick()
+    {
+        //here user can perform buton click function
+        return Task.Delay(6000);
+    }
+
+    List<Hand> hands = new List<Hand>()
+    {
+        new Hand{Selection = OptionRPS.Paper,LosesAgainst = OptionRPS.Scissors,WinsAgainst=OptionRPS.Rock,Image = "paper.jpg"},
+        new Hand{Selection = OptionRPS.Rock,LosesAgainst = OptionRPS.Paper,WinsAgainst=OptionRPS.Scissors,Image = "rock.jpg"},
+        new Hand{Selection = OptionRPS.Scissors,LosesAgainst = OptionRPS.Rock,WinsAgainst=OptionRPS.Paper,Image = "scissors.jpg"}
+    };
+    Timer timer;
+    Hand opponentHand;
+    string resultMessage = string.Empty;
+    string resultMessageColor = string.Empty;
+    
+
+    protected override void OnInitialized()
+    {
+        opponentHand = hands[0];
+        timer = new Timer();
+        timer.Interval = 100;
+        timer.Elapsed += TimerOnElapsed;
+        timer.Start();
+
+    }
+    int IndexOpponentHand = 0;
+    private void TimerOnElapsed(Object sender, ElapsedEventArgs e)
+    {
+        IndexOpponentHand = (IndexOpponentHand + 1) % hands.Count;
+        opponentHand = hands[IndexOpponentHand];
+        StateHasChanged();
+    }
+
+    public void Dispose()
+    {
+        if(timer != null)
+        {
+            timer.Dispose();
+        }
+    }
+
+    private async void SelectHand(Hand hand)
+    {
+        timer.Stop();
+        var result = hand.PlayAgainst(opponentHand);
+
+        if(result == GameStatus.Victory)
+        {
+            resultMessage = "You won!";
+            resultMessageColor = "green";
+            StateHasChanged();
+            
+             
+            
+            
+            
+
+
+        }else if(result == GameStatus.Loss)
+        {
+            resultMessage = "You lost!";
+            resultMessageColor = "red";
+            StateHasChanged();
+             
+
+        }
+        else
+        {
+            resultMessage = "Draw!";
+            resultMessageColor = "black";
+            StateHasChanged();
+            
+
+        }
+
+    }
+    private void PlayAgainst()
+    {
+        timer.Start();
+        resultMessage = string.Empty;
+    }
+}
