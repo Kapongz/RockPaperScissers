@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9FXNXT2MN5p+89/EgFAV+6co1kCSOjs1bfq0+S71VeI=",
+  "Hash": "+1gbWuDGZ18bIYV8MnmzM/MIZ0VSoMjxgTPNl0HCvJs=",
   "Source": "RockPaperAndScissors",
   "BasePath": "/",
   "Mode": "Root",
@@ -7089,12 +7089,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\paper.jpg",
+      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\paper.png",
       "SourceId": "RockPaperAndScissors",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "paper.jpg",
+      "RelativePath": "paper.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7103,15 +7103,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\paper.jpg"
+      "OriginalItemSpec": "wwwroot\\paper.png"
     },
     {
-      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\rock.jpg",
+      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\rock.png",
       "SourceId": "RockPaperAndScissors",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "rock.jpg",
+      "RelativePath": "rock.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7120,7 +7120,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\rock.jpg"
+      "OriginalItemSpec": "wwwroot\\rock.png"
     },
     {
       "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\sample-data\\weather.json",
@@ -7140,12 +7140,12 @@
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     },
     {
-      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\scissors.jpg",
+      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\scissors.png",
       "SourceId": "RockPaperAndScissors",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "scissors.jpg",
+      "RelativePath": "scissors.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7154,7 +7154,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\scissors.jpg"
+      "OriginalItemSpec": "wwwroot\\scissors.png"
     }
   ]
 }
