@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RHTmJKNr/h8r13AvlA2tf27k2YD6gfP3Y/A1jzbNYxs=",
+  "Hash": "uVfIFxHmka0zr2QDin/o8VM6x2cH6NEO5i/W3c07EWY=",
   "Source": "RockPaperAndScissors",
   "BasePath": "/",
   "Mode": "Root",
@@ -7053,6 +7053,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\js\\JavaScript.js",
+      "SourceId": "RockPaperAndScissors",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "js/JavaScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JavaScript.js"
     },
     {
       "Identity": "D:\\Learn-Blazor\\RockPaperAndScissors\\RockPaperAndScissors\\wwwroot\\paper.png",
